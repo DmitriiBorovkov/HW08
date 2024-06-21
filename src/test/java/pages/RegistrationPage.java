@@ -11,7 +11,7 @@ import static com.codeborne.selenide.Selenide.*;
 
 public class RegistrationPage {
 
-    private SelenideElement firstNameInput = $("#firstName"),
+    private final SelenideElement firstNameInput = $("#firstName"),
             lastNameInput = $("#lastName"),
             genderWraper = $("#genterWrapper"),
             userPhoneNumberInput = $("#userNumber"),

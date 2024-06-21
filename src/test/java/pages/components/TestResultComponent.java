@@ -7,7 +7,7 @@ import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 
 public class TestResultComponent {
-    private SelenideElement resultTable = $(".modal-content");
+    private final SelenideElement resultTable = $(".modal-content");
 
     public void checkTable(String key, String value) {
         resultTable.$(byText(key)).parent().shouldHave(Condition.text(value));

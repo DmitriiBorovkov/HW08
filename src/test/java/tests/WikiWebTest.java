@@ -26,7 +26,7 @@ public class WikiWebTest {
 
     @MethodSource("getDayOfWeek")
     @ParameterizedTest(name = "Проверка поиска статьи про {0} на wiki")
-    void chekDayOfWeek(String day) {
+    void checkDayOfWeek(String day) {
         open("https://ru.wikipedia.org/");
         $("[placeholder='Искать в Википедии']").setValue(day);
         $("#searchButton").click();
